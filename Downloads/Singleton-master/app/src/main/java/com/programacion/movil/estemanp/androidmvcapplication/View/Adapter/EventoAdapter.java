@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.programacion.movil.estemanp.androidmvcapplication.Domain.Evento;
@@ -20,7 +21,6 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventViewH
 
     private List<Evento> eventList;
     Context context;
-
 
     public EventoAdapter(Context context, List<Evento> eventList){
         this.context = context;
@@ -40,6 +40,7 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventViewH
         holder.txtNameEvent.setText(eventList.get(position).getNombre());
         holder.txtTypeEvent.setText(eventList.get(position).getTipo());
         holder.txtDateEvent.setText(eventList.get(position).getFecha());
+        holder.txtHoraEvent.setText(eventList.get(position).getHora());
     }
 
     @Override
@@ -55,7 +56,8 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventViewH
                 txtIdEvent,
                 txtNameEvent,
                 txtTypeEvent,
-                txtDateEvent;
+                txtDateEvent,
+                txtHoraEvent;
 
         public EventViewHolder(View v) {
             super(v);
@@ -63,6 +65,7 @@ public class EventoAdapter extends RecyclerView.Adapter<EventoAdapter.EventViewH
             txtNameEvent = (TextView) v.findViewById(R.id.txtNameEvento);
             txtTypeEvent =(TextView) v.findViewById(R.id.txtTipoEvento);
             txtDateEvent = (TextView) v.findViewById(R.id.txtFechaEvento);
+            txtHoraEvent = (TextView) v.findViewById(R.id.txtHoraEvento);
         }
     }
 

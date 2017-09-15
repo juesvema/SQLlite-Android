@@ -3,21 +3,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="10dp"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
     android:paddingTop="10dp"
+    android:weightSum="1"
     tools:context="com.programacion.movil.estemanp.androidmvcapplication.View.LandingActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Vista para Usuarios" />
+        android:text="Filtrar por Tipo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/inputSearch"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1.14" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Buscar" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fechaFiltro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:text="Fecha" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerEventos"
         android:layout_width="match_parent"
-        android:layout_height="229dp"
-        android:scrollbars="vertical"
-        android:layout_weight="8.69"/>
+        android:layout_height="178dp"
+        android:layout_weight="0.85"
+        android:scrollbars="vertical" />
+
 </LinearLayout>

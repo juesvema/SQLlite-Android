@@ -42,7 +42,7 @@ public class EventoController extends db {
         return true;
     }
 
-    public List<Evento> llenarEventos (){
+    public List<Evento> llenarEventos () {
         List<Evento> listEventos = new ArrayList<>();
         Cursor cursor = getEventos();
         cursor.moveToFirst();
@@ -53,7 +53,37 @@ public class EventoController extends db {
             cursor.moveToNext();
         }
         for (Evento event : listEventos) {
-            System.out.println("event: " + event.get_id());
+            System.out.println("event: " + event.getFecha());
+        }
+        return listEventos;
+    }
+    public List<Evento> filtrarporTipo (String tipo) {
+        List<Evento> listEventos = new ArrayList<>();
+        Cursor cursor = getEventos();
+        cursor.moveToFirst();
+        Evento userAux;
+        while (!cursor.isAfterLast()) {
+            userAux = new Evento(cursor);
+            String type = userAux.getTipo().toString();
+            if (tipo.equals(type)) {
+                listEventos.add(userAux);
+            }
+            cursor.moveToNext();
+        }
+        return listEventos;
+    }
+    public List<Evento> filtrarporFecha (String fecha) {
+        List<Evento> listEventos = new ArrayList<>();
+        Cursor cursor = getEventos();
+        cursor.moveToFirst();
+        Evento userAux;
+        while (!cursor.isAfterLast()) {
+            userAux = new Evento(cursor);
+            String type = userAux.getFecha().toString();
+            if (fecha.equals(type)) {
+                listEventos.add(userAux);
+            }
+            cursor.moveToNext();
         }
         return listEventos;
     }

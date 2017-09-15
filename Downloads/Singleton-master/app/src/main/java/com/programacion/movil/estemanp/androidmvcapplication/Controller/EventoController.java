@@ -57,6 +57,7 @@ public class EventoController extends db {
         }
         return listEventos;
     }
+
     public List<Evento> filtrarporTipo (String tipo) {
         List<Evento> listEventos = new ArrayList<>();
         Cursor cursor = getEventos();
@@ -72,6 +73,7 @@ public class EventoController extends db {
         }
         return listEventos;
     }
+
     public List<Evento> filtrarporFecha (String fecha) {
         List<Evento> listEventos = new ArrayList<>();
         Cursor cursor = getEventos();

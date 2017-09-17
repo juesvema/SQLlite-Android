@@ -37,10 +37,14 @@ public class LoginActivity extends AppCompatActivity {
             Intent intent = new Intent(this, Admin.class);
             startActivity(intent);
         } else if (ApplicationController.getInstance().isValidUser(userName.getText().toString(), password.getText().toString(), spinner1.getSelectedItem().toString()) && usuario.equals(spinner1.getSelectedItem().toString())){
-            Intent intent = new Intent(this, LandingActivity.class);
-            startActivity(intent);
+            Intent intent = new Intent();
+            intent.setClass(getApplicationContext(), Evento_activity.class);
+            intent.setAction(Evento_activity.class.getName());
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS);
+            getApplicationContext().startActivity(intent);
         }else{
             Toast.makeText(this, "El usuario, contraseña o rol no coinciden", Toast.LENGTH_SHORT).show();
         }
     }
+
 }

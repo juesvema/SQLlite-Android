@@ -5,12 +5,14 @@ import android.database.Cursor;
 
 import com.programacion.movil.estemanp.androidmvcapplication.Repositorio.EventContract;
 
+import java.io.Serializable;
 
 /**
  * Created by User on 14/09/2017.
  */
 
-public class Evento {
+public class Evento implements Serializable {
+
     public   int _id;
     public   String nombre;
     public   String tipo;

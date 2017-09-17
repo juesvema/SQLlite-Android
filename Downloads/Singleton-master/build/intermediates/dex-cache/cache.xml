@@ -3,30 +3,57 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\User\.android\build-cache\1b036eedd7f840b68c274b472fb25b1ca2067aae\output\jars\classes.jar"
+        jar="C:\Users\User\.android\build-cache\6ad09591f9e3424d18a2b15637cb695ece748d3e\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0047639290813bde009c91f033e19f781fdafdba\classes.dex" />
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_da2102b99677a77a1937ecfcc698827c2b58955f\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\User\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jar="C:\Users\User\.android\build-cache\c967bdded99d9d34f2e2300eba3f76c93876302b\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_8b571364c1229a5ecc4fef863acb773b0c466b91\classes.dex" />
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7734258d1f2379ae9245792d164775e41cfa6a49\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\User\.android\build-cache\4e82324018287e8dc98fd31669b2eb40747951fe\output\jars\classes.jar"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\io.reactivex.rxjava2\rxjava\2.1.1\99895d4dc6d79efbb74360f13c556d95533ad8f8\rxjava-2.1.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_78bcd9e6e1fd8e02019368e15ad828ffb503fc71\classes.dex" />
+        sha1="99895d4dc6d79efbb74360f13c556d95533ad8f8">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\rxjava-2.1.1_bcd6ce760870a6b5f30e22ae2a171ae9fb9260ae\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_c6c36c9266a53bff725e5087f6a3090b1d0ab593\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.1\2a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0\gson-2.8.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="02a8e0aa38a2e21cb39e2f5a7d6704cbdc941da0">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.8.1_723d74eae77a2a442abf0e9883054a85c89c097c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.2\43eeae0b9fb087bb3194ba59ab63a38a32fbf3e\retrofit-2.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="043eeae0b9fb087bb3194ba59ab63a38a32fbf3e">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.0.2_6090e61d4a0ddfea3f153b6c4487a20a1ce2cf8a\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -34,35 +61,80 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ad6a97f0225c4f195b09369d46ad6023cb4a9148">
+        sha1="4f319d4a918200438a9d3adea516b4cf8c7fe4b7">
         <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f215c1cc13d9df550294bbccfcf455ca9213afe5\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\User\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\org.reactivestreams\reactive-streams\1.0.0\14b8c877d98005ba3941c9257cfe09f6ed0e0d74\reactive-streams-1.0.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_888dc6c70591458ee998c2926f41c5e65a528d54\classes.dex" />
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\reactive-streams-1.0.0_b27164a160cdca23bdbae73d3ea0b9541ab64189\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\User\.android\build-cache\4e82324018287e8dc98fd31669b2eb40747951fe\output\jars\libs\internal_impl-23.4.0.jar"
+        jar="C:\Users\User\.android\build-cache\0df6e04513bc69da432d5d0ac3922e5bc23b5feb\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_a6d3e315158d98ee740d478d65b86e8d00f0ec60\classes.dex" />
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b0d7165407bd5055c0f9515948999483673c420d\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\User\.android\build-cache\8cb817ddba74bd73fe82fd104b8fdf070a083cea\output\jars\classes.jar"
+        jar="C:\Users\User\.android\build-cache\6509c7c694ca25ed07aac6728d8352ef728da039\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2e9c5c3b34e05ca305232e8ae91977591d1923c4\classes.dex" />
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_26cdd6b98fd61886b03804d8b9057eccc40168c9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_9f79a10fffeb20d68ec2556dfcbe26f5eb452e5e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\c4aa735ac9a39afd40cf7b34c43f26adf32a6666\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d9b63bdb7eecc9e8a382d7a7993b8db4e9398553\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\e14662d062f90c62cc1ff8fef9be043109d924c5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2916198658420d61f420d99557f4bd70f126b06a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.2.0_f6e6642ed4c0f01cb7be5c8477533ef8d026302f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\d37259d237f18095fa5064471e60a950c3ca6a8f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d0df3bf618b078d102a4234ceff33c44026e64b9">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_edcb96b67136a1a1d7513b0aebf856ac153078c5\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -75,12 +147,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\User\.android\build-cache\ed7dbcea6038883c5b443c8c7b658e97db63898a\output\jars\classes.jar"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
-        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d3abb9a81dfc0ce2ed6d840865d2969c5f15c99c\classes.dex" />
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_c381e096a4a3279073b5cf49014e9da1dd1163f3\classes.dex" />
     </item>
 
 </items>

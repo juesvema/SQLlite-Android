@@ -23,18 +23,18 @@
         android:orientation="horizontal"
         android:weightSum="1">
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Buscar" />
+
         <EditText
             android:id="@+id/inputSearch"
             android:layout_width="179dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_weight="1.14" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="95dp"
-            android:layout_height="wrap_content"
-            android:text="Buscar" />
 
     </LinearLayout>
 

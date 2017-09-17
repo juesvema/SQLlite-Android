@@ -30,38 +30,52 @@
 
             <TextView
                 android:id="@+id/txtNameEvento"
-                style="@style/Base.TextAppearance.AppCompat.Subhead"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nombre del estudiante" />
 
         <TextView
                 android:id="@+id/txtFechaEvento"
-                style="@style/Base.TextAppearance.AppCompat.Subhead"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="id" />
 
             <TextView
                 android:id="@+id/txtHoraEvento"
-                style="@style/Base.TextAppearance.AppCompat.Subhead"
                 android:layout_width="49dp"
                 android:layout_height="wrap_content"
                 android:text="id" />
 
             <TextView
                 android:id="@+id/txtTipoEvento"
-                style="@style/Base.TextAppearance.AppCompat.Subhead"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="id" />
 
         <TextView
             android:id="@+id/txtIdEvento"
-            style="@style/Base.TextAppearance.AppCompat.Subhead"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="id"
             android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="47dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.64"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ver"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:text="Ver" />
     </LinearLayout>
+</LinearLayout>

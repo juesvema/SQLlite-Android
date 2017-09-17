@@ -36,13 +36,13 @@ public class EventoController extends db {
                         EventContract.EventEntry.TABLE_NAME, null, null, null, null, null, null);
     }
 
-    public boolean dropTable(){
+    public boolean dropTable() {
         SQLiteDatabase db = this.getWritableDatabase();
-        onUpgrade(db,1,2);
+        onUpgrade(db, 1, 2);
         return true;
     }
 
-    public List<Evento> llenarEventos () {
+    public List<Evento> llenarEventos() {
         List<Evento> listEventos = new ArrayList<>();
         Cursor cursor = getEventos();
         cursor.moveToFirst();
@@ -58,7 +58,7 @@ public class EventoController extends db {
         return listEventos;
     }
 
-    public List<Evento> filtrarporTipo (String tipo) {
+    public List<Evento> filtrarporTipo(String tipo) {
         List<Evento> listEventos = new ArrayList<>();
         Cursor cursor = getEventos();
         cursor.moveToFirst();
@@ -74,7 +74,7 @@ public class EventoController extends db {
         return listEventos;
     }
 
-    public List<Evento> filtrarporFecha (String fecha) {
+    public List<Evento> filtrarporFecha(String fecha) {
         List<Evento> listEventos = new ArrayList<>();
         Cursor cursor = getEventos();
         cursor.moveToFirst();

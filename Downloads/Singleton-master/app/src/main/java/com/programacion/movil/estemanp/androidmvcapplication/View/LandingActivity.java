@@ -49,7 +49,7 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
         recyclerStudents.setHasFixedSize(true);
         mLayoutManager=new LinearLayoutManager(this);
         recyclerStudents.setLayoutManager(mLayoutManager);
-        eventoAdapter = new EventoAdapter(this , appController.llenarEventos());
+      //  eventoAdapter = new EventoAdapter(this , appController.llenarEventos());
         recyclerStudents.setAdapter(eventoAdapter);
         fechaFiltro.setOnClickListener(this);
         buscar.setOnClickListener(new View.OnClickListener(){
@@ -62,7 +62,7 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
 
     public void filtrarporTipo(){
         String text = inputSearch.getText().toString();
-        eventoFiltrar = new EventoAdapter(this, appController.filtrarporTipo(text));
+     //  eventoFiltrar = new EventoAdapter(this, appController.filtrarporTipo(text));
         String blank = "";
         if (blank.equals(text)){
             recyclerStudents.setAdapter(eventoAdapter);
@@ -73,7 +73,7 @@ public class LandingActivity extends AppCompatActivity implements View.OnClickLi
 
     public void filtrarporFecha(){
         String fecha = fechaFiltro.getText().toString();
-        eventoFiltrarFecha = new EventoAdapter(this, appController.filtrarporFecha(fecha));
+       // eventoFiltrarFecha = new EventoAdapter(this, appController.filtrarporFecha(fecha));
         String blank = "";
         if (blank.equals(fecha)){
             recyclerStudents.setAdapter(eventoAdapter);

@@ -55,7 +55,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:background="@android:drawable/checkbox_off_background"
-                android:backgroundTint="@android:drawable/checkbox_off_background"
                 android:onClick="login"
                 android:text="@string/btn_login" />
         </LinearLayout>

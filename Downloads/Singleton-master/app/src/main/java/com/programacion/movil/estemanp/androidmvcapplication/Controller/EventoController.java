@@ -10,6 +10,7 @@ import com.programacion.movil.estemanp.androidmvcapplication.Repositorio.EventCo
 import com.programacion.movil.estemanp.androidmvcapplication.Repositorio.db;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -21,7 +22,7 @@ public class EventoController extends db {
     public EventoController(Context context) {
         super(context);
     }
-
+    List<Evento> listEventos = new ArrayList<>();
     public boolean create(Evento event) {
 
         SQLiteDatabase db = this.getWritableDatabase();
@@ -43,7 +44,6 @@ public class EventoController extends db {
     }
 
     public List<Evento> llenarEventos() {
-        List<Evento> listEventos = new ArrayList<>();
         Cursor cursor = getEventos();
         cursor.moveToFirst();
         Evento userAux;
@@ -59,7 +59,6 @@ public class EventoController extends db {
     }
 
     public List<Evento> filtrarporTipo(String tipo) {
-        List<Evento> listEventos = new ArrayList<>();
         Cursor cursor = getEventos();
         cursor.moveToFirst();
         Evento userAux;
@@ -75,7 +74,6 @@ public class EventoController extends db {
     }
 
     public List<Evento> filtrarporFecha(String fecha) {
-        List<Evento> listEventos = new ArrayList<>();
         Cursor cursor = getEventos();
         cursor.moveToFirst();
         Evento userAux;

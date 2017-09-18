@@ -50,6 +50,7 @@ public class Evento_activity extends AppCompatActivity implements Observer, View
         appController= new EventoController(getApplicationContext());
         inputSearch = (EditText) findViewById(R.id.inputSearch);
         buscar = (Button) findViewById(R.id.buscar);
+        fechaFiltro = (TextView) findViewById(R.id.fechaFiltro);
         recyclerStudents= (RecyclerView) findViewById(R.id.lista_evento);
         eventoAdapter = new EventoAdapter(this , appController.llenarEventos());
         recyclerStudents.setAdapter(eventoAdapter);
@@ -97,27 +98,25 @@ public class Evento_activity extends AppCompatActivity implements Observer, View
         String blank = "";
         if (blank.equals(text)) {
             recyclerStudents.setAdapter(eventoAdapter);
-            recyclerStudents.setLayoutManager(new LinearLayoutManager(this));
-            setupObserver(eventViewModel);
             eventViewModel.onClickFabLoad(null);
         } else {
             recyclerStudents.setAdapter(eventoFiltrar);
-            recyclerStudents.setLayoutManager(new LinearLayoutManager(this));
-            setupObserver(eventViewModel);
-            eventViewModel.onClickFabLoad(null);
+            eventViewModel.onClickFabLoadFiltrar(null, text);
         }
     }
 
-    /*public void filtrarporFecha(){
+    public void filtrarporFecha(){
         String fecha = fechaFiltro.getText().toString();
-       // eventoFiltrarFecha = new EventoAdapter(this, appController.filtrarporFecha(fecha));
+        eventoFiltrarFecha = new EventoAdapter(this, appController.filtrarporFecha(fecha));
         String blank = "";
         if (blank.equals(fecha)){
             recyclerStudents.setAdapter(eventoAdapter);
+            eventViewModel.onClickFabLoad(null);
         }else{
-            recyclerStudents.setAdapter(eventoFiltrarFecha);
+            recyclerStudents.setAdapter(eventoFiltrar);
+            eventViewModel.onClickFabLoadFecha(null, fecha);
         }
-    }*/
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
@@ -151,7 +150,7 @@ public class Evento_activity extends AppCompatActivity implements Observer, View
                 public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                     String dates = dayOfMonth + "/" + (monthOfYear + 1) + "/" + year;
                     fechaFiltro.setText(dates);
-                    //filtrarporFecha();
+                    filtrarporFecha();
                 }
             }
                     , dia, mes, año);

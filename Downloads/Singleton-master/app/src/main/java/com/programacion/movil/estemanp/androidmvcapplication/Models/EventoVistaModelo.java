@@ -35,13 +35,27 @@ public class EventoVistaModelo extends Observable {
 
     public void onClickFabLoad(View view) {
         eventRecycler.set(View.GONE);
-        fetchEventList();
-    }
-
-    public void fetchEventList() {
         appController = new EventoController(context);
         eventList.addAll(appController.llenarEventos());
-        System.out.println("lista: " + eventList);
+        setChanged();
+        notifyObservers();
+        eventRecycler.set(View.VISIBLE);
+    }
+
+    public void onClickFabLoadFiltrar(View view, String text) {
+        eventRecycler.set(View.GONE);
+        appController = new EventoController(context);
+        eventList.removeAll(appController.llenarEventos());
+        eventList.addAll(appController.filtrarporTipo(text));
+        setChanged();
+        notifyObservers();
+        eventRecycler.set(View.VISIBLE);
+    }
+
+    public void onClickFabLoadFecha(View view, String text) {
+        eventRecycler.set(View.GONE);
+        appController = new EventoController(context);
+        eventList.addAll(appController.filtrarporFecha(text));
         setChanged();
         notifyObservers();
         eventRecycler.set(View.VISIBLE);

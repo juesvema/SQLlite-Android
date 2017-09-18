@@ -3,6 +3,7 @@ package com.programacion.movil.estemanp.androidmvcapplication.View;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.Context;
+import android.widget.Toast;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
@@ -63,8 +64,13 @@ public class Admin extends AppCompatActivity implements View.OnClickListener {
                 Evento evento = new Evento(nombres, tipos, encargados, ciudad, fecha, hour, requi, descripciones);
                 boolean controller = new EventoController(getApplicationContext()).create(evento);
                 System.out.println("CONTROLADOR "+controller);
+                toast();
             }
         });
+    }
+
+    public void toast(){
+        Toast.makeText(this, "Evento Guardado", Toast.LENGTH_SHORT).show();
     }
 
     @Override

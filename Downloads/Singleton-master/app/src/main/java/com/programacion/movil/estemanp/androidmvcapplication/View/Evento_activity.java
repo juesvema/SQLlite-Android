@@ -35,16 +35,34 @@ public class Evento_activity extends AppCompatActivity implements Observer, View
 
     private EventoBinding eventActivityBinding;
     private EventoVistaModelo eventViewModel;
+    private EventoController appController;
+    private EventoAdapter eventoAdapter, eventoFiltrar, eventoFiltrarFecha;
     public TextView fechaFiltro;
+    public EditText inputSearch;
+    public Button buscar;
+    private RecyclerView recyclerStudents;
     private int dia, mes, año, AmPm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initDataBinding();
-        setupListPeopleView(eventActivityBinding.listaEvento);
+        appController= new EventoController(getApplicationContext());
+        inputSearch = (EditText) findViewById(R.id.inputSearch);
+        buscar = (Button) findViewById(R.id.buscar);
+        recyclerStudents= (RecyclerView) findViewById(R.id.lista_evento);
+        eventoAdapter = new EventoAdapter(this , appController.llenarEventos());
+        recyclerStudents.setAdapter(eventoAdapter);
+        recyclerStudents.setHasFixedSize(true);
+        recyclerStudents.setLayoutManager(new LinearLayoutManager(this));
         setupObserver(eventViewModel);
         eventViewModel.onClickFabLoad(null);
+        buscar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                filtrarporTipo();
+            }
+        });
         fechaFiltro = (TextView) findViewById(R.id.fechaFiltro);
         fechaFiltro.setOnClickListener(this);
     }
@@ -53,12 +71,6 @@ public class Evento_activity extends AppCompatActivity implements Observer, View
         eventActivityBinding = DataBindingUtil.setContentView(this, R.layout.evento);
         eventViewModel = new EventoVistaModelo(this);
         eventActivityBinding.setMainViewModel(eventViewModel);
-    }
-
-    private void setupListPeopleView(RecyclerView listPeople) {
-        EventoAdapter adapter = new EventoAdapter();
-        listPeople.setAdapter(adapter);
-        listPeople.setLayoutManager(new LinearLayoutManager(this));
     }
 
     public void setupObserver(Observable observable) {
@@ -70,10 +82,6 @@ public class Evento_activity extends AppCompatActivity implements Observer, View
         super.onDestroy();
     }
 
-    private void startActivityActionView() {
-        //  startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(PeopleFactory.PROJECT_URL)));
-    }
-
     @Override
     public void update(Observable observable, Object data) {
         if (observable instanceof EventoVistaModelo) {
@@ -83,23 +91,26 @@ public class Evento_activity extends AppCompatActivity implements Observer, View
         }
     }
 
-    /*public void filtrarporTipo(RecyclerView listPeople){
+    public void filtrarporTipo() {
         String text = inputSearch.getText().toString();
-        EventoAdapter adapter = new EventoAdapter();
-
         eventoFiltrar = new EventoAdapter(this, appController.filtrarporTipo(text));
         String blank = "";
-        if (blank.equals(text)){
-            listPeople.setAdapter(adapter);
-            listPeople.setLayoutManager(new LinearLayoutManager(this));
-        }else{
+        if (blank.equals(text)) {
+            recyclerStudents.setAdapter(eventoAdapter);
+            recyclerStudents.setLayoutManager(new LinearLayoutManager(this));
+            setupObserver(eventViewModel);
+            eventViewModel.onClickFabLoad(null);
+        } else {
             recyclerStudents.setAdapter(eventoFiltrar);
+            recyclerStudents.setLayoutManager(new LinearLayoutManager(this));
+            setupObserver(eventViewModel);
+            eventViewModel.onClickFabLoad(null);
         }
     }
 
-    public void filtrarporFecha(){
+    /*public void filtrarporFecha(){
         String fecha = fechaFiltro.getText().toString();
-        // eventoFiltrarFecha = new EventoAdapter(this, appController.filtrarporFecha(fecha));
+       // eventoFiltrarFecha = new EventoAdapter(this, appController.filtrarporFecha(fecha));
         String blank = "";
         if (blank.equals(fecha)){
             recyclerStudents.setAdapter(eventoAdapter);

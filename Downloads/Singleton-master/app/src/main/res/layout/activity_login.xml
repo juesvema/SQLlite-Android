@@ -4,23 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".View.LoginActivity">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
-            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:orientation="vertical"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:paddingTop="10dp"
-            android:orientation="vertical"
-            android:gravity="center"
             android:weightSum="1">
-        <ImageView
-            android:layout_width="10dp"
-            android:layout_height="10dp"
-            android:layout_marginBottom="10dp"
-            android:src="@mipmap/ic_user2"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_user2" />
 
             <EditText
                 android:id="@+id/editUsername"
@@ -28,30 +32,33 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:hint="@string/hint_username" />
+
             <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editPassword"
-            android:layout_marginBottom="16dp"
-            android:inputType="textPassword"
-            android:hint="@string/hint_password"/>
+                android:id="@+id/editPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword" />
 
             <Spinner
                 android:id="@+id/spinner1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
                 android:entries="@array/rol_array"
                 android:prompt="@string/hint_rol" />
 
             <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_login"
-            android:background="@color/colorButton"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/btnLogin"
-            android:onClick="login"/>
-    </LinearLayout>
-</ScrollView>
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/checkbox_off_background"
+                android:backgroundTint="@android:drawable/checkbox_off_background"
+                android:onClick="login"
+                android:text="@string/btn_login" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
 

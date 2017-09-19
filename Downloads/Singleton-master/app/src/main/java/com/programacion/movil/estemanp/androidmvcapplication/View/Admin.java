@@ -106,6 +106,7 @@ public class Admin extends AppCompatActivity implements View.OnClickListener {
                 }
             }
                     , dia, mes, año);
+            datePickerDialog.updateDate(año, mes, dia);
             datePickerDialog.show();
         }
         if (v == Edit_hora) {

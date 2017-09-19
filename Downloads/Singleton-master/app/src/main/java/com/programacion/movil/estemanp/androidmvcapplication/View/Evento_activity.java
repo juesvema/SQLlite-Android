@@ -154,6 +154,7 @@ public class Evento_activity extends AppCompatActivity implements Observer, View
                 }
             }
                     , dia, mes, año);
+            datePickerDialog.updateDate(año, mes, dia);
             datePickerDialog.show();
         }
 

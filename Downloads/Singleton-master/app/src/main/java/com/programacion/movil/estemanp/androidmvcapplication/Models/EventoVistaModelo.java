@@ -48,7 +48,7 @@ public class EventoVistaModelo extends Observable {
         eventList.removeAll(appController.llenarEventos());
         eventList.addAll(appController.filtrarporTipo(text));
         setChanged();
-        notifyObservers();
+        notifyObservers(); 
         eventRecycler.set(View.VISIBLE);
     }
 
